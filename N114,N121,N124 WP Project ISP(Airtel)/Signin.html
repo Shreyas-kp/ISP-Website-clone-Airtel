@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Airtel - Prepaid | Postpaid | Broadband | DTH | Payments Bank</title>
+    <link href="./style.css"
+        rel="stylesheet">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f0f0f0;
+                overflow-x: hidden; /* Prevent horizontal scroll */
+            }
+            .header-container {
+                position: fixed;
+                width: 100%;
+                background-color: white;
+                z-index: 1000; /* Ensure header is on top */
+            }
+            .container {
+                max-width: 600px;
+                margin: 100px auto; /* Adjust margin to leave space for header */
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h1 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #FF0000; /* Airtel Red color */
+            }
+            .form-group {
+                margin-bottom: 20px;
+            }
+            .form-group label {
+                display: block;
+                margin-bottom: 5px;
+                color: #333;
+            }
+            .form-group input {
+                width: calc(100% - 12px);
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .form-group input:focus {
+                outline: none;
+                border-color: #FF0000; /* Red border color on focus */
+            }
+            .form-group button {
+                width: 100%;
+                padding: 10px;
+                background-color: #FF0000;
+                color: #FFFFFF;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background-color 0.3s;
+            }
+            .form-group button:hover {
+                background-color: #D70000; /* Darker shade of red on hover */
+            }
+        </style>
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-content">
+            <div class="header-brand">
+                <div class="hamburger-btn"></div><a href="index.html"><img draggable="false" class="brand"
+                        src="airtel-red.svg"
+                        alt="airtel" width="100%" height="100%"></a>
+            </div>
+            <div class="header-main">
+                <div class="header-main-actions-container">
+                    <div class="header-main-actions-list-content">
+                        <div class="actions-list-container">
+                            <h3 class="actions-heading">PREPAID</h3>
+                            <ul class="actions-list">
+                                <li><a data-analytics="header|PREPAID-Recharge"
+                                        href="#">Recharge</a></li>
+                                <li><a data-analytics="header|PREPAID-New Prepaid SIM"
+                                        href="#">New Prepaid SIM</a>
+                                </li>
+                                <li><a data-analytics="header|PREPAID-View Plans"
+                                        href="#">View Plans</a></li>
+                            </ul>
+                        </div>
+                        <div class="actions-list-container">
+                            <h3 class="actions-heading">POSTPAID</h3>
+                            <ul class="actions-list">
+                                <li><a data-analytics="header|POSTPAID-Pay Bill"
+                                        href="#">Pay Bill</a></li>
+                                <li><a data-analytics="header|POSTPAID-Buy New Connection"
+                                        data-ab-myplan-infinity="#"
+                                        href="#">Buy
+                                        New Connection</a></li>
+                                <li><a data-analytics="header|POSTPAID-View Plans"
+                                        data-ab-myplan-infinity="#"
+                                        href="#">View Plans</a></li>
+                            </ul>
+                        </div>
+                        <div class="actions-list-container airtel-black-heading">
+                            <h3 class="actions-heading">AIRTEL BLACK</h3>
+                            <ul class="actions-list">
+                                <li><a data-analytics="header|AIRTEL BLACK-Pay Bill"
+                                        href="#">Pay
+                                        Bill</a></li>
+                                <li><a data-analytics="header|AIRTEL BLACK-View Plan"
+                                        href="#">View
+                                        Plans</a></li>
+                            </ul>
+                        </div>
+                        <div class="actions-list-container">
+                            <h3 class="actions-heading">HELP</h3>
+                            <ul class="actions-list">
+                                <li><a data-analytics="header|HELP-Contact Us"
+                                        href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="get-app-container"><a class="actions-heading" data-analytics="header|Get App"
+                            href="DownloadApp.html"><img draggable="false"
+                                src="get-app.svg"
+                                alt="get app" width="24" height="24"> Get App</a></div>
+                </div>
+                <!-- <div class="business-quick-actions">
+                    <div class="other-services"><a data-analytics="header|Xstream"
+                            href="https://www.airtelxstream.in?icid=header" target="_blank">Xstream</a> <a
+                            data-analytics="header|Airtel Payments Bank" href="https://www.airtel.in/bank?icid=header"
+                            target="_blank">Airtel Payments Bank</a> <a data-analytics="header|Wynk"
+                            href="https://wynk.in/music?icid=header" target="_blank">Wynk</a></div><span
+                        class="divider"></span> <a data-analytics="header|Personal" class="active">Personal</a> <a
+                        data-analytics="header|Career" href="https://www.airtel.in/careers/?icid=header"
+                        target="_blank">Career</a> <a data-analytics="header|Business"
+                        href="https://www.airtel.in/business/#/?icid=header" target="_blank">Business</a> <a
+                        data-analytics="header|Investor" href="https://www.airtel.in/about-bharti/equity?icid=hheader"
+                        target="_blank">Investor</a>
+                </div> -->
+                <div class="business-quick-actions">
+                    <div class="other-services">
+                        <a data-analytics="header|Balck" href="AirtelBlack.html" target="_blank">Black</a> 
+                    </div>
+                    <span
+                        class="divider">
+                    </span> 
+                    <a data-analytics="header|Wynk" href="index.html" target="_blank">Home</a>
+                </div>
+            </div>
+            <div class="header-right">
+                <a class="actions-heading" data-analytics="header|Airtel Store"
+                    href="index.html"><img draggable="false"
+                        src="airtel-store.svg"
+                        alt="airtel store" width="24" height="24"> Store 
+                </a>
+                <a class="actions-heading"
+                data-analytics="header|Login" href="Login.html"><img
+                        draggable="false"
+                        src="login-user.svg"
+                        alt="login" width="24" height="24"> Login
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+                <span id="nameError" style="color: red;"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email address" required>
+                <span id="emailError" style="color: red;"></span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <span id="passwordError" style="color: red;"></span>
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="Enter your location" required>
+                <span id="locationError" style="color: red;"></span>
+            </div>
+            <div class="form-group">
+                <label for="pincode">Pin Code:</label>
+                <input type="text" id="pincode" placeholder="Enter your pin code" required>
+                <span id="pincodeError" style="color: red;"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" placeholder="Enter your phone number" required>
+                <span id="phoneError" style="color: red;"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js";
+
+        const firebaseConfig = {
+                apiKey: "AIzaSyDPvs6T59PAoidMwap7qtdBhwnhuQBCe48",
+                authDomain: "testing-ground-73ea1.firebaseapp.com",
+                projectId: "testing-ground-73ea1",
+                storageBucket: "testing-ground-73ea1.appspot.com",
+                messagingSenderId: "1058190315353",
+                appId: "1:1058190315353:web:ae73a0b66f0d5f62724648",
+                measurementId: "G-7R7C63YX78"
+            };
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth();
+
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            var name = document.getElementById('name').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var password = document.getElementById('password').value.trim();
+            var pincode = document.getElementById('pincode').value.trim();
+            var phone = document.getElementById('phone').value.trim();
+            var valid = true;
+
+            document.getElementById('nameError').innerHTML = '';
+            document.getElementById('emailError').innerHTML = '';
+            document.getElementById('passwordError').innerHTML = '';
+            document.getElementById('pincodeError').innerHTML = '';
+            document.getElementById('phoneError').innerHTML = '';
+
+            if (name === '') {
+                document.getElementById('nameError').innerHTML = 'Please enter your full name.';
+                valid = false;
+            } else if (!/^[A-Za-z\s]+$/.test(name)) {
+                document.getElementById('nameError').innerHTML = 'Name should only contain letters.';
+                valid = false;
+            }
+
+            if (email === '') {
+                document.getElementById('emailError').innerHTML = 'Please enter your email address.';
+                valid = false;
+            } else if (!isValidEmail(email)) {
+                document.getElementById('emailError').innerHTML = 'Please enter a valid email address.';
+                valid = false;
+            }
+
+            if (password === '') {
+                document.getElementById('passwordError').innerHTML = 'Please enter your password.';
+                valid = false;
+            }
+            // Add more password validation rules if needed
+
+            if (pincode === '') {
+                document.getElementById('pincodeError').innerHTML = 'Please enter your pin code.';
+                valid = false;
+            } else if (!isValidPincode(pincode)) {
+                document.getElementById('pincodeError').innerHTML = 'Please enter a valid pin code.';
+                valid = false;
+            }
+
+            if (phone === '') {
+                document.getElementById('phoneError').innerHTML = 'Please enter your phone number.';
+                valid = false;
+            } else if (!isValidPhoneNumber(phone)) {
+                document.getElementById('phoneError').innerHTML = 'Please enter a valid phone number.';
+                valid = false;
+            }
+
+            if (valid) {
+                createUserWithEmailAndPassword(auth, email, password)
+                    .then((userCredential) => {
+                        alert('Sign up successful!');
+                        window.location.href = 'index.html';
+                    })
+                    .catch((error) => {
+                        var errorMessage = error.message;
+                        console.error(errorMessage);
+                        alert(errorMessage);
+                    });
+            }
+
+            event.preventDefault();
+        });
+
+        function isValidEmail(email) {
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        function isValidPincode(pincode) {
+            var pincodeRegex = /^\d{6}$/;
+            return pincodeRegex.test(pincode);
+        }
+
+        function isValidPhoneNumber(phone) {
+            var phoneRegex = /^[79]\d{9}$/;
+            return phoneRegex.test(phone);
+        }
+    </script>
+</body>
+</html>
